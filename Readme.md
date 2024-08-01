@@ -4,7 +4,7 @@ This is a todo list project built using the fiber web framework in Golang.
 
 The project provides RESTful APIs for user authorization in  posting tasks 
 
-The backend includes functionalities to sign up, login, task posting, update task , delete task, date filteration and status filteration
+The backend includes functionalities to sign up, login, task posting, update task , delete task.
 
 ## Technology Stack
 
@@ -20,21 +20,36 @@ The Todo list Real Time Exercise Task project is built using the following techn
 
 - **postgres**: PostgreSQL is an advanced, enterprise class open source relational database that supports both SQL and JSON  querying. 
                 It is a highly stable database management system, which has contributed to its high levels of resilience,and correctness. 
+
+## Getting Started
+
+### Installation
+
+1. **Clone the repository:**
+
+    ```
+    git clone https://github.com/muthukumar89uk/go-todo-app.git
+    ```
+  Click here to directly [download it](https://github.com/muthukumar89uk/go-todo-app/zipball/master). 
+
+### Install dependencies:
+
+          go mod tidy
+
+### Run the Application
+  1. Run the Server
    
-
-## Setup
-
-The application will be accessible at `http://localhost:8010`.
+       ```
+          go run .
+       ```   
+  2. The server will start on `http://localhost:8080`.
 
  ##  Project explanation
 
--> the user can sign up and login
-
--> user can post his task details
-
--> user can update and delete his task details
-
--> user can filter date and status to see his task details
+- the user can sign up and login
+- user can post his task details
+- user can update and delete his task details
+- user can filter date and status to see his task details
 
 
 The following API endpoints are available in this project:
@@ -45,10 +60,8 @@ The following API endpoints are available in this project:
 
 - **POST /posttask**: Post task details (user Authorization required).
 
-- **GET /updatetask**: user can update his task details (user Authorization required).
+- **GET  /updatetask**: user can update his task details (user Authorization required).
 
-- **GET /deletetask/:id**: user can delete his task details (user Authorization required).
+- **GET  /deletetask/:id**: user can delete his task details (user Authorization required).
 
-- **PUT /gettasksbydate/:id**: user can  filter date and status to see his task details(user Authorization required).
-
- 
+- **PUT  /gettasksbydate/:id**: user can  filter date and status to see his task details(user Authorization required).
